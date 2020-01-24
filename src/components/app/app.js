@@ -8,7 +8,7 @@ import {
   Switch,
 } from "react-router-dom";
 
-import { HomePage, CardPage } from "../pages";
+import { HomePage, CartPage } from "../pages";
 
 
 
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/" 
                 component={HomePage} 
                 exact />
-          <Route path="/card" component={CardPage} />
+          <Route path="/cart" component={CartPage} />
         </Switch>
     </main>
   );
