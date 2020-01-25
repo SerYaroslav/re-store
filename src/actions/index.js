@@ -18,6 +18,13 @@ const booksError = (error) => {
   };
 };
 
+const bookAddedToCart = (bookId) => {
+  return {
+    type: 'BOOK_ADDED_TO_CART',
+    payload: bookId,
+  }
+};
+
 const fetchBooks = ( bookstoreService, dispatch) => () => {
   dispatch(booksRequested());
   bookstoreService
@@ -32,4 +39,5 @@ export {
   booksError, 
   використовувались в букліст*/
   fetchBooks,
+  bookAddedToCart,
 };
